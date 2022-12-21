@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&family=Montserrat:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+body {
+  background: #f5f5f5;
+  color: #18314f;
+  font-family: "EB Garamond", serif;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 1;
+  font-weight: 400;
+  margin: 3em 0;
+}
+
+h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-bottom: 3em;
+  letter-spacing: 8px;
+  text-align: center;
+  color: #8bc34a;
+}
+
+/* h2::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #18314f;
+  width: 20%;
+  margin: 3em auto 0;
+} */
+
+h2 span {
+  font-size: 5em;
+  font-weight: 700;
+  display: block;
+  color: #18314f;
+}
+
+a {
+  color: #8bbeb2;
+}
+a:hover {
+  color: #7ae7c7;
+}
+
+section {
+  background: white;
+  box-shadow: 0 7px 10px -10px rgb(0 0 0 / 25%);
+  width: 80%;
+  margin: 50px auto;
+  padding: 50px;
+  border-radius: 20px;
+  border: 3px solid #98ca60ba;
+}
+
+.the-ones-you-know code {
+  font-weight: 600;
+}
+
+.universal code {
+  background: #d1ecef;
+  padding: 0.25em;
+}
+
+.direct-children .example {
+  padding: 1em;
+  background: #d1ecef;
+}
+
+.direct-children .example p {
+  margin: 0;
+}
+
+.adjacent-sibling,
+.general-sibling,
+.child-selector,
+.before-after {
+  text-align: center;
+}
+
+.adjacent-sibling .box,
+.general-sibling .box,
+.child-selector .box,
+.before-after .box {
+  height: 75px;
+  width: 75px;
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+
+/* =================================
+   Universal 
+   ================================= */
+
+/*    
+.universal * {
+    color: red;
+  }
+.universal > * {
+    color: red;
+  } */
+
+/* =================================
+   Direct children
+   ================================= */
+
+/* .direct-children p {
+  color: red;
+}
+
+.direct-children > p {
+  color: green;
+} */
+
+/* =================================
+   Adjacent siblings
+   ================================= */
+
+/* .adjacent-sibling .box + .box {
+  background: red;
+} */
+
+/* =================================
+   General siblings
+   ================================= */
+
+/* .general-sibling .box ~ .box {
+  background: red;
+} */
+
+/* =================================
+   Child Selector
+   ================================= */
+
+/* =================================
+   Before / After
+   ================================= */
+
+/* =================================
+   Attributes
+   ================================= */
+
+/* exact match */
+
+/* a[href] {
+       color: darkblue;
+    }
+    
+    a[target] {
+        color: darkblue;
+    }
+    
+    a[href="about.html"] {
+  color: red;
+}
+
+a[class|="another"] {
+    color: purple;
+}
+
+a[href^="http"] {
+    color: orange;
+}
+
+a[href*="google"] {
+    color: black;
+}
+
+a[href$=".ca"] {
+    color: blue;
+} */
+
+/* =================================
+   Target Selector
+   ================================= */
+
+.target-selector ul {
+  list-style: none;
+}
+
+.target-selector :target {
+  color: #fff;
+  font-weight: bold;
+  background-color: orange;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+
+    <style>
+        /* #special-title {
+            color: purple;
+            font-size: 15px;
+        } */
+
+        h2 {
+            color: red;
+            font-size: 30px;
+        }
+
+        .first-title {
+            font-size: 50px;
+            color: black;
+        }
+
+        .first-title--purple {
+            color: purple !important;
+        }
+
+        .first-title--blue {
+            color: blue !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 class="first-title">First Title</h2>
+    <h2 class="first-title first-title--purple first-title--blue" style="color: aquamarine;">Second Title</h2>
+    <h2>Third Title</h2>
+
+</body>
+
+</html>
